@@ -42,4 +42,27 @@ public:
             cout << "Stack is empty." << endl;
         }
 
-       
+        Node *temp = top;
+        top = top->next;
+        cout << "Popped value: " << temp->data << endl;
+    }
+
+    //peel /top operation: retrive the value of the element witchout removing
+    void peek()
+    {
+        if (top == NULL)
+        {
+            cout << "List is Empty." << endl;
+        }
+        else
+        {
+            Node *current = top;
+            while (current != NULL)
+            {
+                cout << current->data << " ";
+                current = current->next;
+            }
+            cout << endl;
+        }//return the value of the top node
+    }
+    

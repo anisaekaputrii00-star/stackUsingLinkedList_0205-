@@ -65,4 +65,10 @@ public:
             cout << endl;
         }//return the value of the top node
     }
-    
+    //isEmpaty operation: check of the stack is empty
+    bool isEmpty()
+    {
+        return top == NULL;//return true if the top pointer is null, indicating that the stack is empty 
+    }
+};
+

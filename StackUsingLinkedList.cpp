@@ -27,4 +27,5 @@ public:
     int push(int value)
     {
         Node *newnode = new Node();
+        newnode->data = value;
     }
